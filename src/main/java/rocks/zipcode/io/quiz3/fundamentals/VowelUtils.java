@@ -7,11 +7,8 @@ public class VowelUtils {
     public static Boolean hasVowels(String word) {
         Boolean flag = false;
         for (int i = 0; i < word.length(); i++) {
-            if ((word.charAt(i) == 'a') ||
-                    (word.charAt(i) == 'e') ||
-                    (word.charAt(i) == 'i') ||
-                    (word.charAt(i) == 'o') ||
-                    (word.charAt(i) == 'u')) {
+            if (isVowel(word.charAt(i)))
+            {
                 flag = true;
             } else
                 flag = false;
