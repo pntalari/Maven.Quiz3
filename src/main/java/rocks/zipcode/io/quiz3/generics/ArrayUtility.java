@@ -18,11 +18,22 @@ public class ArrayUtility<SomeType> {
     }
 
     public SomeType findEvenOccurringValue() {
+        Integer count = 0;
+        for (int i = 0;i<array.length;i++){
+
+            }
+
         return null;
     }
 
     public Integer getNumberOfOccurrences(SomeType valueToEvaluate) {
-        return null;
+        Integer count = 0;
+        for (int i = 0;i<array.length;i++){
+            if(array[i].equals(valueToEvaluate)){
+                count++;
+            }
+        }
+        return count;
     }
 
     public SomeType[] filter(Function<SomeType, Boolean> predicate) {
