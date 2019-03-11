@@ -37,7 +37,9 @@ public class ArrayUtility<SomeType> {
     }
 
     public SomeType[] filter(Function<SomeType, Boolean> predicate) {
-
+        for (int i = 0; i <array.length ; i++) {
+            
+        }
         return null;
     }
 }
