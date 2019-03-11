@@ -13,6 +13,7 @@ public class ArrayUtility<SomeType> {
     }
 
     public SomeType findOddOccurringValue() {
+      //  SomeType[] arr = new SomeType
         return null;
     }
 
@@ -25,6 +26,7 @@ public class ArrayUtility<SomeType> {
     }
 
     public SomeType[] filter(Function<SomeType, Boolean> predicate) {
+
         return null;
     }
 }
