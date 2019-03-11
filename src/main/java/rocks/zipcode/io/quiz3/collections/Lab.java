@@ -4,8 +4,7 @@ package rocks.zipcode.io.quiz3.collections;
  * @author leon on 10/12/2018.
  */
 public class Lab {
-
-   private static String labName = "";
+    static String labName = "";
 
     public Lab() {
 

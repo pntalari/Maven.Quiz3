@@ -5,17 +5,25 @@ package rocks.zipcode.io.quiz3.fundamentals;
  */
 public class PigLatinGenerator {
     public String translate(String str) {
+        String[] arr = str.split(" ");
         String strRet = "";
-        Integer index = VowelUtils.getIndexOfFirstVowel(str);
-        if(index!=null) {
-            if (VowelUtils.startsWithVowel(str)) {
-                strRet = str + "way";
+        String finalStr = "";
+
+        for (int i =0;i<arr.length;i++) {
+            Integer index = VowelUtils.getIndexOfFirstVowel(arr[i]);
+            if (index != null) {
+                if (VowelUtils.startsWithVowel(arr[i])) {
+                    strRet += arr[i] + "way";
+
+                } else {
+                    strRet += arr[i].substring(index) + arr[i].substring(0, index) + "ay";
+
+                }
             } else {
-                strRet = str.substring(index) + str.substring(0, index) + "ay";
+                strRet += arr[i] + "ay";
+
             }
-        }
-        else {
-            strRet = str + "ay";
+
         }
         return strRet;
     }
