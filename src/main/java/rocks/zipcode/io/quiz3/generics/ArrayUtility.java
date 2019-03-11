@@ -19,9 +19,6 @@ public class ArrayUtility<SomeType> {
 
     public SomeType findEvenOccurringValue() {
         Integer count = 0;
-        for (int i = 0;i<array.length;i++){
-
-            }
 
         return null;
     }
@@ -38,7 +35,7 @@ public class ArrayUtility<SomeType> {
 
     public SomeType[] filter(Function<SomeType, Boolean> predicate) {
         for (int i = 0; i <array.length ; i++) {
-            
+
         }
         return null;
     }
