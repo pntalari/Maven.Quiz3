@@ -21,14 +21,14 @@ public class Student {
     }
 
     public Lab getLab(String labName) {
-        Lab retLab = new Lab();
+      //  Lab lab = new Lab();
         for (Map.Entry<Lab, LabStatus> entry : mapLabStatus.entrySet()) {
-            if (entry.getKey().equals(labName)) {
-                retLab = entry.getKey();
-            }
-        }
+            if (entry.getKey().getName().equals(labName))
 
-        return retLab;
+                return entry.getKey();
+
+        }
+        return null;
     }
 
     public void setLabStatus(String labName, LabStatus labStatus) {
